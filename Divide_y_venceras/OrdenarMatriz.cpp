@@ -25,7 +25,6 @@ int particion(vector<int>& Array, int ini, int fin) {
 }
 
 int particionPair(vector<vector<int>>& matriz, vector<pair<int,int>>& Array, int ini, int fin) {
-	//usare la mitad como pivote ya que dice que esta semiordenado
 	swap(Array[ini], Array[(fin - ini) / 2]);
 	swap(matriz[Array[ini].first], matriz[Array[(fin - ini) / 2].first]);
 	int pivote = ini;
